@@ -3,12 +3,12 @@ console.log('test code for merge')
 //and the squares should populate with a random color
 $('button').on('click', () => {
   console.log('button works')
-  // invoke our function to intialize our squares
+  // invoke our function to initialize our squares
   game.setUpRound();
   game.setTimer();
 });
 
-// using event delagation
+// using event delegation
 $('.squares').on('click', (e) => {
   game.checkValidPoke(e.target)
 })
@@ -136,4 +136,3 @@ const game = {
   }    
 
 }
-
